@@ -1,9 +1,42 @@
-
-
 @include mobile {
   header {
-    li {
-      display: none;
+    .logo {
+      width: 5rem;
+    }
+
+    .desktopMenu {
+
+      li {
+        display: none;
+      }
+    }
+
+    nav {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
+}
+
+@include desktop {
+  header {
+    .hamburgerMenu {
+      display: none;
+
+    }
+  }
+}
+
+
+.hamburgerMenu {
+  border: none;
+  background-color: white;
+  font-size: 2.3rem;
+}
+
+
+.habababa {
+  z-index: 99;
 }
