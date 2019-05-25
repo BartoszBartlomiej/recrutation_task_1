@@ -18,25 +18,61 @@
       justify-content: space-between;
     }
   }
+
+  .hamburgerBtn {
+    border: none;
+    background-color: white;
+    font-size: 2.3rem;
+
+  }
 }
 
 @include desktop {
   header {
     .hamburgerMenu {
       display: none;
+    }
 
+    nav {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .desktopMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+          padding: 1.5rem 0 0 2rem;
+          font-family: 'Lato', sans-serif;
+        }
+      }
+    }
+
+    //.first_layer {
+    //  position: relative;
+    //  z-index: 1;
+    //}
+    //
+    //.second_layer {
+    //  position: relative;
+    //  z-index: 2;
+    //  top: -352px;
+    //  left: 1px;
+    //  opacity: 0.5;
+    //}
+
+    .logo {
+      width: 5rem;
     }
   }
 }
 
-
-.hamburgerMenu {
-  border: none;
-  background-color: white;
-  font-size: 2.3rem;
-}
-
-
-.habababa {
-  z-index: 99;
+.haba {
+  position: relative;
+  z-index: 3;
+  background-color: red;
+  width: 8rem;
 }

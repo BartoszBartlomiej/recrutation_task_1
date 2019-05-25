@@ -31,19 +31,17 @@ class HamburgerMenu extends Component {
             display: this.state.show,
         };
         return (
-            <div>
-                <button onClick={this.handleBtnClick} className='hamburgerMenu'>
+            <div className='hamburgerMenu'>
+                <button onClick={this.handleBtnClick} className='hamburgerBtn'>
                     <FontAwesomeIcon icon='bars'/>
                 </button>
 
-                <div style={myStyleHide} className='habababa'>
-                    <ul>
+                    <ul style={myStyleHide} className='haba'>
                         <li>STRONA GŁOWNA</li>
                         <li>WYSZUKIWARKA</li>
                         <li>INWESTYCJE</li>
                         <li>BLOG</li>
                     </ul>
-                </div>
             </div>
 
         );

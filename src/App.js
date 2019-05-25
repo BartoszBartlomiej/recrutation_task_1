@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.scss';
 
 import Header from "./components/Header/Header";
+import FindInvestment from './components/FindInvestment/FindInvestment';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -18,6 +19,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Header/>
+                <FindInvestment/>
             </div>
         );
     }

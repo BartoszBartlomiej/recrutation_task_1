@@ -1,0 +1,97 @@
+@include mobile {
+  .find {
+    padding-top: 1rem;
+
+    .find__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+      }
+
+      p {
+        padding-top: 0.7rem;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+  .find__investment {
+    margin-top: 1rem;
+    padding: 1rem 0.3rem 1rem 0.3rem;
+    display: flex;
+    justify-content: center;
+
+    -webkit-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+    -moz-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+    box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+
+    li {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.3rem;
+    }
+
+    .smaller_text {
+      font-size: 12px;
+    }
+
+    .project {
+      padding-top: 1rem;
+      width: 16rem;
+    }
+
+    .north {
+      position: relative;
+      height: 5rem;
+
+      .north__line {
+        height: 1rem;
+        width: 0.15rem;
+        background-color: black;
+        position: absolute;
+        left: 1px;
+      }
+
+      .north__circle {
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+    }
+
+  }
+}
+
+
+@include desktop {
+
+  .find {
+    padding-top: 3rem;
+
+    .find__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+
+      }
+
+      p {
+        padding-top: 1rem;
+        width: 50rem;
+        text-align: center;
+        line-height: 24px;
+      }
+
+    }
+  }
+}

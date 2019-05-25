@@ -4,6 +4,8 @@ import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
 
 import logo from './../../img/logo.png'
 import header from './../../img/header.jpg'
+import overlay from './../../img/header-overlay.jpg';
+import connected from './../../img/connected.png';
 
 class Header extends Component {
     render() {
@@ -23,11 +25,13 @@ class Header extends Component {
                             </ul>
                             <HamburgerMenu/>
                         </nav>
-
-                    <img src={header}/>
+                        <div>
+                            {/*<img className='first_layer ' src={header}/>*/}
+                            {/*<img className='second_layer' src={overlay}/>*/}
+                            <img src={connected}/>
+                        </div>
                     </div>
                 </header>
-
             </div>
         );
     }

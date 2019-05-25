@@ -2,9 +2,13 @@
 @import "sass/general/base";
 @import "sass/general/reset";
 @import "sass/general/mixins";
+@import "sass/general/fonts";
 
 
-
+// HEADER
 
 @import "components/Header/header";
 
+// SECTION 1
+
+@import "components/FindInvestment/findInvestment";
