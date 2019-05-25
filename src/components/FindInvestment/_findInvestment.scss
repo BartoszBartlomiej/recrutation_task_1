@@ -1,6 +1,7 @@
 @include mobile {
   .find {
     padding-top: 1rem;
+    height: 68rem;
 
     .find__description {
       display: flex;
@@ -18,52 +19,91 @@
         font-size: 15px;
       }
     }
+
+
+    .find__investment {
+      margin-top: 1rem;
+      padding: 1rem 0.3rem 1rem 0.3rem;
+      display: flex;
+      justify-content: center;
+
+      -webkit-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+      -moz-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+      box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+
+      li {
+        font-family: 'Lato', sans-serif;
+        line-height: 1.3rem;
+      }
+
+      .smaller_text {
+        font-size: 12px;
+      }
+
+      .project {
+        padding-top: 1rem;
+        width: 16rem;
+      }
+
+      .north {
+        padding-top: 1rem;
+        position: relative;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+
+        .north__line {
+          height: 1rem;
+          width: 0.15rem;
+          background-color: black;
+          position: absolute;
+          top: 34px;
+        }
+
+        .north__circle {
+          position: absolute;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          border: 2px solid black;
+          top: 40px;
+        }
+      }
+
+
+      .find__investment__buttons {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background-color: black;
+          color: white;
+          font-family: 'Lato', sans-serif;
+          border-radius: 10px;
+          width: 6rem;
+          height: 2rem;
+          border: none;
+        }
+      }
+    }
   }
-  .find__investment {
-    margin-top: 1rem;
-    padding: 1rem 0.3rem 1rem 0.3rem;
+  .arrows {
+    padding-top: 1.5rem;
     display: flex;
     justify-content: center;
 
-    -webkit-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
-    -moz-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
-    box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
-
-    li {
+    span {
+      padding: 0 3px 0 3px;
       font-family: 'Lato', sans-serif;
-      line-height: 1.3rem;
     }
 
-    .smaller_text {
-      font-size: 12px;
+    div {
+      padding: 0 9px 0 9px;
+      margin: 0 3px 0 3px;
+      border: 1px solid black;
+      border-radius: 10px;
     }
-
-    .project {
-      padding-top: 1rem;
-      width: 16rem;
-    }
-
-    .north {
-      position: relative;
-      height: 5rem;
-
-      .north__line {
-        height: 1rem;
-        width: 0.15rem;
-        background-color: black;
-        position: absolute;
-        left: 1px;
-      }
-
-      .north__circle {
-        position: absolute;
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
-        border: 2px solid black;
-      }
-    }
-
   }
 }
 
@@ -72,6 +112,7 @@
 
   .find {
     padding-top: 3rem;
+    height: 50rem;
 
     .find__description {
       display: flex;
@@ -92,6 +133,115 @@
         line-height: 24px;
       }
 
+    }
+
+    .find__investment {
+      -webkit-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+      -moz-box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+      box-shadow: 0 14px 13px 1px rgba(220, 220, 220, 1);
+      padding: 1rem 3rem 1rem 3rem;
+
+    }
+
+    .find__investment__description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        padding-bottom: 2rem;
+
+      }
+
+      li {
+        font-family: 'Lato', sans-serif;
+        line-height: 2rem;
+        font-weight: 300;
+        font-size: 17px;
+      }
+
+      .smaller_text {
+        font-size: 12px;
+      }
+
+      .find__investment__buttons {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+
+        button {
+          background-color: black;
+          color: white;
+          font-size: 17px;
+          border-radius: 10px;
+          width: 9rem;
+          height: 2rem;
+          border: none;
+          font-family: 'Lato', sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .project {
+      height: 22rem;
+      padding: 0 3rem 0 3rem;
+    }
+
+    .building__project {
+      height: 6rem;
+    }
+
+    .building {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .north {
+      padding: 1rem 0 6rem 0;
+      position: relative;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+
+      .north__line {
+        height: 1rem;
+        width: 0.10rem;
+        background-color: black;
+        position: absolute;
+        top: 34px;
+      }
+
+      .north__circle {
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        border: 2px solid black;
+        top: 40px;
+      }
+    }
+
+    .arrows {
+
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+
+
+      span {
+        padding: 0 3px 0 3px;
+        font-family: 'Lato', sans-serif;
+      }
+
+      div {
+        padding: 0 9px 0 9px;
+      }
     }
   }
 }

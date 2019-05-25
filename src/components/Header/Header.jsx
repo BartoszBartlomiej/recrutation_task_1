@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
 import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
 
 import logo from './../../img/logo.png'
@@ -25,7 +25,7 @@ class Header extends Component {
                             </ul>
                             <HamburgerMenu/>
                         </nav>
-                        <div>
+                        <div className='header_img'>
                             {/*<img className='first_layer ' src={header}/>*/}
                             {/*<img className='second_layer' src={overlay}/>*/}
                             <img src={connected}/>

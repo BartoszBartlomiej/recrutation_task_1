@@ -3,16 +3,20 @@ import './App.scss';
 
 import Header from "./components/Header/Header";
 import FindInvestment from './components/FindInvestment/FindInvestment';
+import FirstContact from './components/FirstContact/FirstContact';
+
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import {faArrowLeft, faStroopwafel} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from "@fortawesome/free-solid-svg-icons/faBars";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
 library.add(faStroopwafel);
 library.add(faBars);
-
+library.add(faArrowLeft);
+library.add(faArrowRight);
 
 class App extends Component {
     render() {
@@ -20,6 +24,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <FindInvestment/>
+                <FirstContact/>
             </div>
         );
     }

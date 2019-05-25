@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 import project from './../../img/rzut.png';
+import position from './../../img/polozenie.png';
 
 class FindInvestment extends Component {
     render() {
@@ -15,26 +18,41 @@ class FindInvestment extends Component {
                     </div>
                     <div className='find__investment'>
                         <div className='find__investment__description'>
-                            <h2>Lokal U/0/1</h2>
-                            <ul>
-                                <li>Metraż: 127.85 m2</li>
-                                <li>Cena netto: 1 572 555 zł*</li>
-                                <li className='smaller_text'>* cena nie zawiera 23% VAT</li>
-                                <li>Pietro: 0 - Parter</li>
-                                <li>Przeznaczenie: Gastronomiczne</li>
-                                <li>Status: Wolne</li>
-                            </ul>
-                            <img className='project' src={project}/>
-                            <div className='north'>
-                                <p>N</p>
-                                <div className='north__line'/>
-                                <div className='north__circle'/>
-
+                            <div>
+                                <h2>Lokal U/0/1</h2>
+                                <ul>
+                                    <li>Metraż: 127.85 m2</li>
+                                    <li>Cena netto: 1 572 555 zł*</li>
+                                    <li className='smaller_text'>* cena nie zawiera 23% VAT</li>
+                                    <li>Pietro: 0 - Parter</li>
+                                    <li>Przeznaczenie: Gastronomiczne</li>
+                                    <li>Status: Wolne</li>
+                                </ul>
+                                <div className='find__investment__buttons'>
+                                    <button>Zapytaj</button>
+                                    <button>Pobierz plan</button>
+                                </div>
                             </div>
-
+                            <img className='project' src={project}/>
+                            <div className='building'>
+                                <div className='north'>
+                                    <p>N</p>
+                                    <div className='north__line'/>
+                                    <div className='north__circle'/>
+                                </div>
+                                <img src={position} className='building__project'/>
+                            </div>
                         </div>
-
-
+                    </div>
+                    <div className='arrows'>
+                        <div>
+                            <span><FontAwesomeIcon icon='arrow-left'/></span>
+                            <span>Poprzedni</span>
+                        </div>
+                        <div>
+                            <span>Następny</span>
+                            <span><FontAwesomeIcon icon='arrow-right'/></span>
+                        </div>
                     </div>
                 </div>
             </div>
