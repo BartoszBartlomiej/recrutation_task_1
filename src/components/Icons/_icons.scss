@@ -1,0 +1,52 @@
+@include mobile {
+  .icons {
+    padding-top: 2rem;
+    height: 31rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      height: 5rem;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      padding: 0.7rem 0 2rem 0;
+
+    }
+  }
+}
+
+
+@include desktop {
+  .icons {
+    padding-top: 4rem;
+    height: 30rem;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3rem 0 3rem;
+      }
+
+      img {
+        height: 6rem;
+      }
+
+      p {
+        font-family: 'Lato', sans-serif;
+        padding: 0.7rem 0 2rem 0;
+
+      }
+    }
+  }
+}

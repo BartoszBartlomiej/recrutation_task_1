@@ -4,6 +4,8 @@ import './App.scss';
 import Header from "./components/Header/Header";
 import FindInvestment from './components/FindInvestment/FindInvestment';
 import FirstContact from './components/FirstContact/FirstContact';
+import Icons from './components/Icons/Icons';
+import Blog from './components/Blog/Blog';
 
 
 
@@ -25,6 +27,8 @@ class App extends Component {
                 <Header/>
                 <FindInvestment/>
                 <FirstContact/>
+                <Icons/>
+                <Blog/>
             </div>
         );
     }
