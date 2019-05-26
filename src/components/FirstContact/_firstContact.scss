@@ -1,7 +1,6 @@
-
 @include mobile {
   .firstContact {
-    height: 30rem;
+    height: 60rem;
     background-color: #F8F8F8;
     margin-top: 5rem;
     position: relative;
@@ -19,6 +18,207 @@
       position: absolute;
       top: 18rem;
 
+      h2 {
+        width: 15rem;
+        line-height: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+      }
+
+      p {
+        padding-top: .5rem;
+        font-size: 15px;
+        width: 20rem;
+        font-family: 'Lato', sans-serif;
+      }
+
+      form {
+        padding-top: .5rem;
+
+        input {
+          padding: 1rem 0 .5rem 0;
+          width: 20rem;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: #F8F8F8;
+
+        }
+
+        label {
+          position: relative;
+
+          input {
+            width: 3rem;
+            border: 1px solid black;
+          }
+
+          #check {
+            display: none;
+          }
+
+          .checkmark {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid black;
+          }
+
+          #check:checked ~ .checkmark {
+            background-image: url("https://banner2.kisspng.com/20180204/jle/kisspng-check-mark-symbol-icon-black-checkmark-5a76d35a4bac33.40844881151773679431.jpg");
+            background-size: cover;
+            background-position: center center;
+          }
+
+          .checkmark {
+            margin-top: 1rem;
+          }
+        }
+
+        .permission {
+          //position: absolute;
+          padding: 0.8rem 0 0 3rem;
+          //left: 3rem;
+          width: 20rem;
+          font-family: 'Lato', sans-serif;
+
+        }
+
+        input::placeholder {
+          font-family: 'Lato', sans-serif;
+          padding-left: 1rem;
+
+        }
+      }
+
+      button {
+        -webkit-box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        width: 6rem;
+        height: 2rem;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  .firstContact {
+    height: 60rem;
+    background-color: #F8F8F8;
+    margin-top: 5rem;
+    position: relative;
+
+    .content {
+      background-color: red;
+    }
+
+    img {
+      position: absolute;
+      height: 32rem;
+      top: -2.8rem;
+
+    }
+
+    .firstContact__form {
+      position: absolute;
+      top: 3rem;
+      right: 100px;
+
+      h2 {
+        width: 28rem;
+        line-height: 2rem;
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+      }
+
+      p {
+        padding-top: .5rem;
+        font-size: 15px;
+        width: 20rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+      }
+
+      form {
+        padding-top: .5rem;
+
+        input {
+          padding: 1rem 0 .5rem 0;
+          width: 20rem;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: #F8F8F8;
+
+        }
+
+        label {
+          position: relative;
+
+          input {
+            width: 3rem;
+            border: 1px solid black;
+          }
+
+          #check {
+            display: none;
+          }
+
+          .checkmark {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 1px solid black;
+          }
+
+          #check:checked ~ .checkmark {
+            background-image: url("https://banner2.kisspng.com/20180204/jle/kisspng-check-mark-symbol-icon-black-checkmark-5a76d35a4bac33.40844881151773679431.jpg");
+            background-size: cover;
+            background-position: center center;
+          }
+
+          .checkmark {
+            margin-top: 1rem;
+          }
+        }
+
+        .permission {
+          //position: absolute;
+          padding: 0.8rem 0 0 3rem;
+          //left: 3rem;
+          width: 20rem;
+          font-family: 'Lato', sans-serif;
+          font-weight: 300;
+        }
+
+        input::placeholder {
+          font-family: 'Lato', sans-serif;
+          padding-left: 1rem;
+        }
+      }
+
+      button {
+        -webkit-box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 20px -1px rgba(0, 0, 0, 0.4);
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        width: 6rem;
+        height: 2rem;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+
+      }
     }
   }
 }
