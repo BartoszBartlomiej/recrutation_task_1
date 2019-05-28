@@ -7,6 +7,9 @@ import FirstContact from './components/FirstContact/FirstContact';
 import Icons from './components/Icons/Icons';
 import Blog from './components/Blog/Blog';
 import About from './components/About/About';
+import SecondContact from './components/SecondContact/SecondContact';
+import Footer from './components/Footer/Footer';
+
 
 
 
@@ -31,6 +34,8 @@ class App extends Component {
                 <Icons/>
                 <Blog/>
                 <About/>
+                <SecondContact/>
+                <Footer/>
             </div>
         );
     }

@@ -8,6 +8,7 @@
 
       li {
         display: none;
+
       }
     }
 
@@ -19,6 +20,26 @@
     }
   }
 
+  .hamburgerMenu__menu {
+    position: absolute;
+    //z-index: 8;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 10rem;
+    right: 18px;
+    top: 87px;
+    height: 7.75rem;
+    color: white;
+    padding: 5px 5px 5px 5px;
+
+
+
+
+
+    li {
+      padding-bottom: 15px;
+    }
+  }
+
   .hamburgerBtn {
     border: none;
     background-color: white;
@@ -26,6 +47,7 @@
 
   }
 }
+
 
 @include desktop {
   header {
@@ -69,16 +91,16 @@
     }
 
     .header_img {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
 
     }
   }
 }
 
-.haba {
-  position: relative;
-  z-index: 3;
-  background-color: red;
-  width: 8rem;
-}
+//.haba {
+//  position: absolute;
+//  z-index: 3;
+//  background-color: red;
+//  width: 8rem;
+//}

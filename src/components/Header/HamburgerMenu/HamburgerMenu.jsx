@@ -36,7 +36,7 @@ class HamburgerMenu extends Component {
                     <FontAwesomeIcon icon='bars'/>
                 </button>
 
-                    <ul style={myStyleHide} className='haba'>
+                    <ul style={myStyleHide} className='hamburgerMenu__menu'>
                         <li>STRONA GŁOWNA</li>
                         <li>WYSZUKIWARKA</li>
                         <li>INWESTYCJE</li>

@@ -36,6 +36,14 @@
         flex-direction: column;
         align-items: center;
         padding: 0 3rem 0 3rem;
+
+      }
+
+
+      .icons__icon:hover {
+        transform: scale(1.1) ;
+        transition: 0.2s;
+        color: #5069A9;
       }
 
       img {

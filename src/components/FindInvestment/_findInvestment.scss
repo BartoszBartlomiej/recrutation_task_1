@@ -35,6 +35,12 @@
         font-size: 20px;
       }
 
+      .under_line {
+        width: 3rem;
+        border-top: 2px solid black;
+        margin: 1rem 0 1rem 0;
+      }
+
       li {
         font-family: 'Lato', sans-serif;
         line-height: 1.3rem;
@@ -85,15 +91,24 @@
           color: white;
           font-family: 'Lato', sans-serif;
           border-radius: 10px;
-          width: 6rem;
+          width: 7.5rem;
           height: 2rem;
           border: none;
+          //font-size: 10px;
+          letter-spacing: 2px;
+
         }
+      }
+      a {
+        color: white;
+        //font-size: 10px;
+        letter-spacing: 2px;
+        text-decoration: none;
       }
     }
   }
   .arrows {
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
 
@@ -128,6 +143,12 @@
         font-family: 'Lato', sans-serif;
         font-weight: 300;
 
+      }
+
+      .under_line {
+        width: 3rem;
+        border-top: 2px solid black;
+        margin: 1rem 0 1rem 0;
       }
 
       p {
@@ -187,6 +208,13 @@
           border: none;
           font-family: 'Lato', sans-serif;
           letter-spacing: 2px;
+        }
+
+        a {
+          color: white;
+          font-size: 17px;
+          letter-spacing: 2px;
+          text-decoration: none;
         }
       }
     }

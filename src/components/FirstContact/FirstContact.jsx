@@ -5,7 +5,7 @@ import form1 from './../../img/form1.jpg';
 class FirstContact extends Component {
     render() {
         return (
-            <div className='firstContact'>
+            <div id='ask' className='firstContact'>
                 <div className='content'>
                     <img src={form1}/>
                     <div className='firstContact__form'>

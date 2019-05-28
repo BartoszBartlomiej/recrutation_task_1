@@ -47,6 +47,7 @@
         align-items: center;
 
         .number {
+          font-family: 'Lato', sans-serif;
           font-weight: bold;
           font-size: 8rem;
         }
@@ -59,6 +60,7 @@
 
 
         p {
+          font-family: 'Lato', sans-serif;
           text-align: center;
         }
       }
@@ -70,7 +72,7 @@
 
 @include desktop {
   .about {
-    height: 60rem;
+    height: 35rem;
 
     .about__header {
       display: flex;
@@ -118,6 +120,7 @@
         align-items: center;
 
         .number {
+          font-family: 'Lato', sans-serif;
           font-weight: bold;
           font-size: 150px;
         }
@@ -130,6 +133,7 @@
 
 
         p {
+          font-family: 'Lato', sans-serif;
           text-align: center;
         }
       }

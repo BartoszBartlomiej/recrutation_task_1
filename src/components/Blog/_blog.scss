@@ -74,7 +74,7 @@
     }
 
     .blog__post_two__text {
-      padding-top: 23rem;
+      padding-top: 24rem;
 
       p {
         font-family: 'Lato', sans-serif;
@@ -179,9 +179,10 @@
 
     .blog__post_two {
       position: relative;
-      left: 39rem;
+      left: 42rem;
       top: -4rem;
       margin-top: 3rem;
+      width: 1rem;
 
       .blog__post_two__img {
         position: relative;
@@ -204,7 +205,8 @@
     }
 
     .blog__post_two__text {
-      padding-top: 28rem;
+      padding: 28rem 0 0 0;
+      //padding-top: 28rem;
 
       p {
         font-family: 'Lato', sans-serif;

@@ -20,6 +20,7 @@ class FindInvestment extends Component {
                         <div className='find__investment__description'>
                             <div>
                                 <h2>Lokal U/0/1</h2>
+                                <div className='under_line'/>
                                 <ul>
                                     <li>Metraż: 127.85 m2</li>
                                     <li>Cena netto: 1 572 555 zł*</li>
@@ -29,7 +30,9 @@ class FindInvestment extends Component {
                                     <li>Status: Wolne</li>
                                 </ul>
                                 <div className='find__investment__buttons'>
-                                    <button>Zapytaj</button>
+                                    <button>
+                                        <a href='/#ask'> Zapytaj</a>
+                                    </button>
                                     <button>Pobierz plan</button>
                                 </div>
                             </div>
