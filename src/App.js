@@ -6,16 +6,17 @@ import FindInvestment from './components/FindInvestment/FindInvestment';
 import FirstContact from './components/FirstContact/FirstContact';
 import Icons from './components/Icons/Icons';
 import Blog from './components/Blog/Blog';
+import About from './components/About/About';
 
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faArrowLeft, faStroopwafel} from '@fortawesome/free-solid-svg-icons'
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from "@fortawesome/free-solid-svg-icons/faBars";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
-library.add(faStroopwafel);
+
 library.add(faBars);
 library.add(faArrowLeft);
 library.add(faArrowRight);
@@ -29,6 +30,7 @@ class App extends Component {
                 <FirstContact/>
                 <Icons/>
                 <Blog/>
+                <About/>
             </div>
         );
     }

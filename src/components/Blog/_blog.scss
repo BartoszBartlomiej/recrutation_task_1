@@ -1,7 +1,7 @@
 @include mobile {
   .blog {
     background-color: #F8F8F8;
-    height: 75rem;
+    height: 71rem;
 
     .blog__post_one {
       .blog__post_one__img {
@@ -112,13 +112,16 @@
 @include desktop {
   .blog {
     background-color: #F8F8F8;
-    height: 75rem;
+    height: 46rem;
+
     .content {
       position: relative;
     }
 
     .blog__post_one {
       position: absolute;
+      padding-top: 10rem;
+
       .blog__post_one__img {
         position: relative;
 
@@ -138,10 +141,11 @@
       }
 
       .blog__post_one__text {
-        padding-top: 13rem;
+        padding: 20rem 30rem 0 0;
 
         p {
           font-family: 'Lato', sans-serif;
+          width: 25rem;
 
         }
 
@@ -175,26 +179,36 @@
 
     .blog__post_two {
       position: relative;
+      left: 39rem;
+      top: -4rem;
       margin-top: 3rem;
 
-      .post1 {
-        position: absolute;
-        opacity: 0.7;
-        top: -1rem;
-      }
+      .blog__post_two__img {
+        position: relative;
+        //height: 1rem;
+        width: 25rem;
 
-      .post1overlay {
-        position: absolute;
-        top: -1rem;
-        //opacity: 0.7;
+
+        .post1 {
+          position: absolute;
+          opacity: 0.7;
+          top: -1rem;
+        }
+
+        .post1overlay {
+          position: absolute;
+          top: -1rem;
+          //opacity: 0.7;
+        }
       }
     }
 
     .blog__post_two__text {
-      padding-top: 23rem;
+      padding-top: 28rem;
 
       p {
         font-family: 'Lato', sans-serif;
+        width: 22rem;
 
       }
 

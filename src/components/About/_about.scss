@@ -1,0 +1,139 @@
+@include mobile {
+  .about {
+    height: 60rem;
+
+    .about__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 0 3rem 0;
+
+      h4 {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        letter-spacing: 5px;
+        font-weight: 700;
+      }
+
+      .under_line {
+        border-bottom: 2px solid black;
+        width: 2rem;
+        margin: 1rem 0 1rem 0;
+      }
+
+      h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+      }
+
+      p {
+        padding-top: 1.6rem;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+      }
+
+    }
+
+    .about__numbers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      .about__numbers_number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+          font-weight: bold;
+          font-size: 8rem;
+        }
+
+        .under_line {
+          border-bottom: 2px solid black;
+          width: 2rem;
+          margin: 0 0 1rem 0;
+        }
+
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
+
+
+@include desktop {
+  .about {
+    height: 60rem;
+
+    .about__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 0 3rem 0;
+
+      h4 {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        letter-spacing: 5px;
+        font-weight: 700;
+      }
+
+      .under_line {
+        border-bottom: 2px solid black;
+        width: 2rem;
+        margin: 1rem 0 1rem 0;
+      }
+
+      h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+      }
+
+      p {
+        padding-top: 1.6rem;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+      }
+
+    }
+
+    .about__numbers {
+      display: flex;
+      //justify-content: center;
+      //flex-direction: column;
+      //align-items: center;
+
+
+      .about__numbers_number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+          font-weight: bold;
+          font-size: 150px;
+        }
+
+        .under_line {
+          border-bottom: 2px solid black;
+          width: 2rem;
+          margin: 0 0 1rem 0;
+        }
+
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}

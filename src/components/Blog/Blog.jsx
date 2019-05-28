@@ -25,7 +25,7 @@ class Blog extends Component {
                         </div>
                     </div>
                     <div className='blog__post_two'>
-                        <div className='blog__post_one__img'>
+                        <div className='blog__post_two__img'>
                             <img className='post1overlay' src={post2overlay}/>
                             <img className='post1' src={post2}/>
                         </div>
