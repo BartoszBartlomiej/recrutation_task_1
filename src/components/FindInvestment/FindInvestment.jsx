@@ -1,65 +1,94 @@
 import React, {Component} from 'react';
+import Investment from './Investment/Investmet'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import project from './../../img/rzut.png';
 import position from './../../img/polozenie.png';
 
+
+
 class FindInvestment extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            localInfo: [],
+            currentInvestment: 0,
+
+        }
+    }
+
+
+    localInformation = () => {
+        const url = 'https://api.adcookie.usermd.net/deweloper/';
+        fetch(url).then(resp => resp.json()).then(data => {
+            console.log(data);
+            this.setState({
+                localInfo: [...data]
+            })
+        })
+
+    };
+
+    componentDidMount() {
+        this.localInformation();
+    }
+
+
+    nextBtn = () => {
+        if (this.state.currentInvestment === this.state.localInfo.length -1) {
+            this.setState({
+                currentInvestment: 0,
+            })
+        } else {
+            this.setState({
+                currentInvestment: this.state.currentInvestment + 1,
+            })
+        }
+    };
+
+    prevBtn = () => {
+        if (this.state.currentInvestment === 0) {
+            this.setState({
+                currentInvestment: 4,
+            })
+        } else {
+            this.setState({
+                currentInvestment: this.state.currentInvestment - 1,
+            })
+        }
+    };
+
+
     render() {
-        return (
-            <div id='search' className='find'>
-                <div className='content'>
-                    <div className='find__description'>
-                        <h1>Znajdź inwestycję, którą pokochasz!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam
-                            erat
-                            volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
-                    </div>
-                    <div className='find__investment'>
-                        <div className='find__investment__description'>
-                            <div>
-                                <h2>Lokal U/0/1</h2>
-                                <div className='under_line'/>
-                                <ul>
-                                    <li>Metraż: 127.85 m2</li>
-                                    <li>Cena netto: 1 572 555 zł*</li>
-                                    <li className='smaller_text'>* cena nie zawiera 23% VAT</li>
-                                    <li>Pietro: 0 - Parter</li>
-                                    <li>Przeznaczenie: Gastronomiczne</li>
-                                    <li>Status: Wolne</li>
-                                </ul>
-                                <div className='find__investment__buttons'>
-                                    <button>
-                                        <a href='/#ask'> Zapytaj</a>
-                                    </button>
-                                    <button>Pobierz plan</button>
-                                </div>
-                            </div>
-                            <img className='project' src={project}/>
-                            <div className='building'>
-                                <div className='north'>
-                                    <p>N</p>
-                                    <div className='north__line'/>
-                                    <div className='north__circle'/>
-                                </div>
-                                <img src={position} className='building__project'/>
-                            </div>
+        if (this.state.localInfo.length === 0) {
+            return null
+        } else {
+            return (
+                <div id='search' className='find'>
+                    <div className='content'>
+                        <div className='find__description'>
+                            <h1>Znajdź inwestycję, którą pokochasz!</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                                Aliquam
+                                erat
+                                volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
                         </div>
-                    </div>
-                    <div className='arrows'>
-                        <div>
-                            <span><FontAwesomeIcon icon='arrow-left'/></span>
-                            <span>Poprzedni</span>
-                        </div>
-                        <div>
-                            <span>Następny</span>
-                            <span><FontAwesomeIcon icon='arrow-right'/></span>
+                        <Investment investment={this.state.localInfo[this.state.currentInvestment]}/>
+                        <div className='arrows'>
+                            <div onClick={this.prevBtn}>
+                                <span><FontAwesomeIcon icon='arrow-left'/></span>
+                                <span>Poprzedni</span>
+                            </div>
+                            <div onClick={this.nextBtn}>
+                                <span>Następny</span>
+                                <span><FontAwesomeIcon icon='arrow-right'/></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 }
 

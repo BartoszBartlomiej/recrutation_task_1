@@ -1,55 +1,58 @@
 import React, {Component} from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+// import './_hamburgerMenu.scss';
 
-class HamburgerMenu extends Component {
+class Asd extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hide: 'none',
-            show: 'block',
-        };
-    };
+            class: "open",
+            hide: "true",
+        }
+    }
 
-
-    handleBtnClick = () => {
-        this.setState({
-            hide: this.state.hide === 'none' ? 'block' : 'none',
-            show: this.state.show === 'block' ? 'none' : 'block',
-        });
+    handleMenuOpen = () => {
+        if (this.state.hide === "true") {
+            this.setState({
+                class: 'open oppenned',
+                hide: "false",
+            })
+        } else {
+            this.setState({
+                class: 'open',
+                hide: "true",
+            })
+        }
     };
 
     render() {
-        const myStyleHide = {
-            display: this.state.hide,
-        };
-        const myStyleShow = {
-            display: this.state.show,
-        };
         return (
             <div className='hamburgerMenu'>
-                <button onClick={this.handleBtnClick} className='hamburgerBtn'>
-                    <FontAwesomeIcon icon='bars'/>
-                </button>
-
-                    <ul style={myStyleHide} className='hamburgerMenu__menu'>
-                        <li>
-                            <a href='/#main'>STRONA GŁOWNA</a>
-                        </li>
-                        <li>
-                            <a href='/#search'>WYSZUKIWARKA</a>
-                        </li>
-                        <li>
-                            INWESTYCJE
-                        </li>
-                        <li>
-                            <a href='/#blog'>BLOG</a>
-                        </li>
-                    </ul>
+            <div onClick={this.handleMenuOpen} display={this.state.hide} className={this.state.class}>
+                <span className="cls"/>
+                    <span>
+                        <ul className="sub-menu ">
+                            <li>
+                                <a href='/#main'>STRONA GŁOWNA</a>
+                            </li>
+                            <li>
+                                <a href='/#search'>WYSZUKIWARKA</a>
+                            </li>
+                            <li>
+                                <a href='/'>INWESTYCJE</a>
+                            </li>
+                            <li>
+                                <a href='/#blog'>BLOG</a>
+                            </li>
+                        </ul>
+                    </span>
+                <span className="cls"/>
+            </div>
             </div>
 
-        );
+        )
     }
+
 }
 
-export default HamburgerMenu;
+export default Asd;
