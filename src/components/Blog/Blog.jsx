@@ -8,7 +8,7 @@ import post2overlay from './../../img/wpis-2-overlay.jpg'
 class Blog extends Component {
     render() {
         return (
-            <div className='blog'>
+            <div id='blog' className='blog'>
                 <div className='content'>
                     <div className='blog__post_one'>
                         <div className='blog__post_one__img'>

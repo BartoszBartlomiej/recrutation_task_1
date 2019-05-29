@@ -116,7 +116,7 @@
 
 @include desktop {
   .secondContact {
-    height: 40rem;
+    height: 36rem;
     background-color: #1F2022;
 
     .secondContact__header {
@@ -162,19 +162,26 @@
 
       input {
         padding: 1rem 0 .5rem 0;
+        margin-left: 10px;
         width: 20rem;
         border: none;
         border-bottom: 1px solid white;
         background-color: #1F2022;
       }
 
+      .message {
+        width: 40.7rem;
+      }
+
       label {
         position: relative;
+        display: flex;
 
         input {
           width: 3rem;
           border: 1px solid white;
         }
+
 
         #check {
           display: none;
@@ -182,8 +189,8 @@
 
         .checkmark {
           position: absolute;
-          width: 1.5rem;
-          height: 1.5rem;
+          width: 1rem;
+          height: 1rem;
           border: 1px solid white;
         }
 

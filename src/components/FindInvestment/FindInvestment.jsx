@@ -8,7 +8,7 @@ import position from './../../img/polozenie.png';
 class FindInvestment extends Component {
     render() {
         return (
-            <div className='find'>
+            <div id='search' className='find'>
                 <div className='content'>
                     <div className='find__description'>
                         <h1>Znajdź inwestycję, którą pokochasz!</h1>

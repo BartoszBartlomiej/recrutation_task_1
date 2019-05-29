@@ -18,6 +18,11 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
+    .header_img {
+      padding-top: 5rem;
+
+    }
   }
 
   .hamburgerMenu__menu {
@@ -31,8 +36,10 @@
     color: white;
     padding: 5px 5px 5px 5px;
 
-
-
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
 
     li {
@@ -60,6 +67,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
 
       .desktopMenu {
         display: flex;
@@ -67,7 +80,7 @@
         justify-content: space-between;
 
         li {
-          padding: 1.5rem 0 0 2rem;
+          padding-left: 2rem;
           font-family: 'Lato', sans-serif;
         }
       }
@@ -93,14 +106,17 @@
     .header_img {
       display: flex;
       justify-content: center;
+      padding-top: 5rem;
 
     }
   }
 }
 
-//.haba {
-//  position: absolute;
-//  z-index: 3;
-//  background-color: red;
-//  width: 8rem;
-//}
+
+.scroll {
+  //position: absolute;
+  background-color: white;
+  //border: 2px solid red;
+  width: 100%;
+  height: 5rem;
+}

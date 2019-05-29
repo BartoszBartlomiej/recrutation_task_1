@@ -17,10 +17,6 @@ class HamburgerMenu extends Component {
             hide: this.state.hide === 'none' ? 'block' : 'none',
             show: this.state.show === 'block' ? 'none' : 'block',
         });
-
-        console.log('Klik?')
-
-
     };
 
     render() {
@@ -37,10 +33,18 @@ class HamburgerMenu extends Component {
                 </button>
 
                     <ul style={myStyleHide} className='hamburgerMenu__menu'>
-                        <li>STRONA GŁOWNA</li>
-                        <li>WYSZUKIWARKA</li>
-                        <li>INWESTYCJE</li>
-                        <li>BLOG</li>
+                        <li>
+                            <a href='/#main'>STRONA GŁOWNA</a>
+                        </li>
+                        <li>
+                            <a href='/#search'>WYSZUKIWARKA</a>
+                        </li>
+                        <li>
+                            INWESTYCJE
+                        </li>
+                        <li>
+                            <a href='/#blog'>BLOG</a>
+                        </li>
                     </ul>
             </div>
 

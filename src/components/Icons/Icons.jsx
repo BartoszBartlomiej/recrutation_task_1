@@ -9,19 +9,34 @@ class Icons extends Component {
         return (
             <div className='icons'>
                 <div className='content'>
-                    <div className='icons__icon'>
-                        <img src={building}/>
-                        <p>ZNAKOMITA LOKALIZACJA</p>
+                    <div className='row'>
+                        <div className='icons__icon'>
+                            <img src={building}/>
+                            <p>ZNAKOMITA LOKALIZACJA</p>
+                        </div>
+                        <div className='icons__icon'>
+                            <img src={layout}/>
+                            <p>CIEKAWY ROZKŁAD</p>
+                        </div>
+                        <div className='icons__icon'>
+                            <img src={car}/>
+                            <p>ŁATWA PRZEPROWADZKA</p>
+                        </div>
                     </div>
-                    <div className='icons__icon'>
-                        <img src={layout}/>
-                        <p>CIEKAWY ROZKŁAD</p>
+                    <div className='row'>
+                        <div className='icons__icon'>
+                            <img src={building}/>
+                            <p>ZNAKOMITA LOKALIZACJA</p>
+                        </div>
+                        <div className='icons__icon'>
+                            <img src={layout}/>
+                            <p>CIEKAWY ROZKŁAD</p>
+                        </div>
+                        <div className='icons__icon'>
+                            <img src={car}/>
+                            <p>ŁATWA PRZEPROWADZKA</p>
+                        </div>
                     </div>
-                    <div className='icons__icon'>
-                        <img src={car}/>
-                        <p>ŁATWA PRZEPROWADZKA</p>
-                    </div>
-
                 </div>
 
             </div>
