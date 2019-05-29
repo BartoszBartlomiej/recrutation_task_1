@@ -1,4 +1,4 @@
-# Recrutacion task
+# Recrutation task
 ## Demo: https://bartoszbartlomiej.github.io/recrutation_task_1/
 
 
