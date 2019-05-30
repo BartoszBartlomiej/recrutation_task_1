@@ -118,8 +118,9 @@
     position: relative;
 
     .content {
-      background-color: red;
+      position: relative;
     }
+
 
     img {
       position: absolute;
@@ -131,7 +132,7 @@
     .firstContact__form {
       position: absolute;
       top: 3rem;
-      right: 100px;
+      left: 42rem;
 
       h2 {
         width: 28rem;
@@ -175,8 +176,8 @@
 
           .checkmark {
             position: absolute;
-            width: 1rem;
-            height: 1rem;
+            width: 14px;
+            height: 14px;
             border: 1px solid black;
           }
 

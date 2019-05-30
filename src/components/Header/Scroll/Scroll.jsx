@@ -21,8 +21,6 @@ class Scroll extends Component {
         this.setState({
             prevScrollPosition: currentScrollPos,
             visible
-        }, () => {
-            console.log(window.pageYOffset)
         });
     };
 
@@ -66,7 +64,7 @@ class Scroll extends Component {
                 <nav>
                     <ul className='desktopMenu'>
                         <li>
-                            <a href='/#main'>STRONA GŁOWNA</a>
+                            <a href='/recrutation_task_1/#main'>STRONA GŁOWNA</a>
                         </li>
                         <li>
                             <a href='/#search'>WYSZUKIWARKA</a>

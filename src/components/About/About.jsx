@@ -20,8 +20,6 @@ class About extends Component {
 
         this.setState({
             isVisible: isVisible
-        }, () => {
-            console.log(offsetTop, isVisible);
         });
     };
 

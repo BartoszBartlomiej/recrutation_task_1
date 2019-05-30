@@ -11,7 +11,7 @@ class FirstContact extends Component {
                     <div className='firstContact__form'>
                         <h2>Zainteresowany kupnem? Zostaw numer!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</p>
-                        <form action="mailto:bartosz.lewicki@gmail.com" method="post" enctype="text/plain">
+                        <form>
                             <input type='text' name='name' placeholder="Imię i nazwisko"/>
                             <br/>
                             <input type='text' name='phoneNumber' placeholder='Telefon'/>
@@ -31,7 +31,7 @@ class FirstContact extends Component {
                             </label>
                             <p className='permission'>Nervous, aren't you? I can see it in your soul. I can feel it in
                                 your bones. This unnerving feeling going through your spine.</p>
-                            <button type='submit'>Wyślij</button>
+                            <button type='button'>Wyślij</button>
                         </form>
                     </div>
                 </div>
