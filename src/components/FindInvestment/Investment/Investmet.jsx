@@ -20,7 +20,7 @@ class Investmet extends Component {
                         </ul>
                         <div className='find__investment__buttons'>
                             <button>
-                                <a href='/#ask'>Zapytaj</a>
+                                <a href='/recrutation_task_1/#ask'>Zapytaj</a>
                             </button>
                             <button>Pobierz plan</button>
                         </div>

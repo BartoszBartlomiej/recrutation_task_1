@@ -13,9 +13,9 @@ class SecondContact extends Component {
                     </div>
                     <form>
                         <div>
-                        <input type='text' name='name' placeholder="Imię i nazwisko"/>
-                        {/*<br/>*/}
-                        <input type='text' name='phoneNumber' placeholder='Telefon lub adres email'/>
+                            <input type='text' name='name' placeholder="Imię i nazwisko"/>
+                            {/*<br/>*/}
+                            <input type='text' name='phoneNumber' placeholder='Telefon lub adres email'/>
                         </div>
                         <br/>
                         <input className='message' type='text' name='call' placeholder='Twoja wiadomość'/>
@@ -24,20 +24,27 @@ class SecondContact extends Component {
                             <input id='check' type='checkbox'/>
                             <span className='checkmark'/>
 
-                        <p className='permission'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-                            porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu
-                            condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-                            porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu
-                            condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-                            porttitor sem. Aliquam erat volutpat. D</p>
+                            <p className='permission'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                at
+                                porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu
+                                condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+                                porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu
+                                condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+                                porttitor sem. Aliquam erat volutpat. D</p>
                         </label>
                         <label>
                             <input id='check' type='checkbox'/>
                             <span className='checkmark'/>
-
-                        <p className='permission'>If you're reading this there's something not quite right with you. And
-                            that's fantastic. Believe in yourself because we already do.</p>
-                    </label>
+                            <p className='permission'>If you're reading this there's something not quite right with you.
+                                And
+                                that's fantastic. Believe in yourself because we already do.</p>
+                        </label>
+                        <label>
+                            <input id='check' type='checkbox'/>
+                            <span className='checkmark'/>
+                            <p className='permission'>I am sure there's something not quite right with me, but I am love
+                                it! Thanks for believing in me :)</p>
+                        </label>
                         <button type='button'>Wyślij</button>
                     </form>
                 </div>

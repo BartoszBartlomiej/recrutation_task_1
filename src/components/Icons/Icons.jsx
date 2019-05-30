@@ -5,8 +5,6 @@ import layout from './../../img/metraz.svg'
 import car from './../../img/samochod.svg';
 
 
-
-
 class Icons extends Component {
 
 

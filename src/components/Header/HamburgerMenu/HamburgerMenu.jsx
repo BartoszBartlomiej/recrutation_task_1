@@ -28,8 +28,8 @@ class Asd extends Component {
     render() {
         return (
             <div className='hamburgerMenu'>
-            <div onClick={this.handleMenuOpen} display={this.state.hide} className={this.state.class}>
-                <span className="cls"/>
+                <div onClick={this.handleMenuOpen} display={this.state.hide} className={this.state.class}>
+                    <span className="cls"/>
                     <span>
                         <ul className="sub-menu ">
                             <li>
@@ -46,13 +46,12 @@ class Asd extends Component {
                             </li>
                         </ul>
                     </span>
-                <span className="cls"/>
-            </div>
+                    <span className="cls"/>
+                </div>
             </div>
 
         )
     }
-
 }
 
 export default Asd;

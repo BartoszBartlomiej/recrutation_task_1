@@ -16,7 +16,8 @@ class Blog extends Component {
                             <img className='post1' src={post1}/>
                         </div>
                         <div className='blog__post_one__text'>
-                            <p className='topic'>BARDZO CIEKAWY WPIS NA NASZYM BLOGU, KTÓREGO PEWNIE NIKT NIE PRZECZYTA</p>
+                            <p className='topic'>BARDZO CIEKAWY WPIS NA NASZYM BLOGU, KTÓREGO PEWNIE NIKT NIE
+                                PRZECZYTA</p>
                             <div className='under_line'/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
                                 Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
@@ -30,7 +31,8 @@ class Blog extends Component {
                             <img className='post1' src={post2}/>
                         </div>
                         <div className='blog__post_two__text'>
-                            <p className='topic'>BARDZO CIEKAWY WPIS NA NASZYM BLOGU, KTÓREGO PEWNIE NIKT NIE PRZECZYTA</p>
+                            <p className='topic'>BARDZO CIEKAWY WPIS NA NASZYM BLOGU, KTÓREGO PEWNIE NIKT NIE
+                                PRZECZYTA</p>
                             <div className='under_line'/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
                                 Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.

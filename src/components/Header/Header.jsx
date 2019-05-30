@@ -3,10 +3,7 @@ import React, {Component} from 'react';
 import Scroll from './Scroll/Scroll';
 
 
-
 import connected from './../../img/connected.png';
-
-
 
 
 class Header extends Component {

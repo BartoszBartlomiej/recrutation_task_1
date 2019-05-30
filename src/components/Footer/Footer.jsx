@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <footer>
                 <div className='content'>
-                    <p>COPYRIGHT 2019. Created Without Any Original Thought  by  Sunday & Autumn</p>
+                    <p>COPYRIGHT 2019. Created Without Any Original Thought by Sunday & Autumn</p>
                     <p>Polityka prywatności</p>
                 </div>
             </footer>

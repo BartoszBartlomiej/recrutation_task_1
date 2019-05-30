@@ -28,7 +28,7 @@ class FindInvestment extends Component {
     }
 
     nextBtn = () => {
-        if (this.state.currentInvestment === this.state.localInfo.length -1) {
+        if (this.state.currentInvestment === this.state.localInfo.length - 1) {
             this.setState({
                 currentInvestment: 0,
             })
@@ -68,7 +68,7 @@ class FindInvestment extends Component {
                         </div>
                         <Investment investment={this.state.localInfo[this.state.currentInvestment]}/>
                         <div className='arrows'>
-                            <div onClick={this.prevBtn}>
+                            <div className='pointer' onClick={this.prevBtn}>
                                 <span><FontAwesomeIcon icon='arrow-left'/></span>
                                 <span>Poprzedni</span>
                             </div>

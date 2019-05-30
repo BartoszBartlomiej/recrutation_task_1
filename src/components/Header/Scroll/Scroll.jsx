@@ -67,13 +67,13 @@ class Scroll extends Component {
                             <a href='/recrutation_task_1/#main'>STRONA GŁOWNA</a>
                         </li>
                         <li>
-                            <a href='/#search'>WYSZUKIWARKA</a>
+                            <a href='/recrutation_task_1/#search'>WYSZUKIWARKA</a>
                         </li>
                         <li>
-                            <a href='/#ask'>INWESTYCJE</a>
+                            <a href='/recrutation_task_1/#ask'>INWESTYCJE</a>
                         </li>
                         <li>
-                            <a href='/#blog'>BLOG</a>
+                            <a href='/recrutation_task_1/#blog'>BLOG</a>
                         </li>
                     </ul>
                 </nav>
