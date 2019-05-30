@@ -3,8 +3,6 @@ import logo from "../../../img/logo.png";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 
-// import Asd from './../HamburgerMenu/Asd';
-
 class Scroll extends Component {
     constructor(props) {
         super(props);
@@ -23,6 +21,8 @@ class Scroll extends Component {
         this.setState({
             prevScrollPosition: currentScrollPos,
             visible
+        }, () => {
+            console.log(window.pageYOffset)
         });
     };
 
@@ -72,7 +72,7 @@ class Scroll extends Component {
                             <a href='/#search'>WYSZUKIWARKA</a>
                         </li>
                         <li>
-                            INWESTYCJE
+                            <a href='/#ask'>INWESTYCJE</a>
                         </li>
                         <li>
                             <a href='/#blog'>BLOG</a>

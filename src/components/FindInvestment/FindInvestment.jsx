@@ -3,10 +3,6 @@ import Investment from './Investment/Investmet'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import project from './../../img/rzut.png';
-import position from './../../img/polozenie.png';
-
-
 
 class FindInvestment extends Component {
     constructor(props) {
@@ -14,10 +10,8 @@ class FindInvestment extends Component {
         this.state = {
             localInfo: [],
             currentInvestment: 0,
-
         }
     }
-
 
     localInformation = () => {
         const url = 'https://api.adcookie.usermd.net/deweloper/';
@@ -27,13 +21,11 @@ class FindInvestment extends Component {
                 localInfo: [...data]
             })
         })
-
     };
 
     componentDidMount() {
         this.localInformation();
     }
-
 
     nextBtn = () => {
         if (this.state.currentInvestment === this.state.localInfo.length -1) {

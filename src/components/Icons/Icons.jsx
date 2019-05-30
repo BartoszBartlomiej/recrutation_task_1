@@ -4,7 +4,12 @@ import building from './../../img/blok.svg';
 import layout from './../../img/metraz.svg'
 import car from './../../img/samochod.svg';
 
+
+
+
 class Icons extends Component {
+
+
     render() {
         return (
             <div className='icons'>

@@ -1,14 +1,9 @@
 import React, {Component} from 'react';
-import project from "../../../img/rzut.png";
-import position from "../../../img/polozenie.png";
 
 class Investmet extends Component {
-
-
-
     render() {
         const info = this.props.investment;
-        console.log(this.props.investment);
+        // console.log(this.props.investment);
         return (
             <div className='find__investment'>
                 <div className='find__investment__description'>
@@ -25,7 +20,7 @@ class Investmet extends Component {
                         </ul>
                         <div className='find__investment__buttons'>
                             <button>
-                                <a href='/#ask'> Zapytaj</a>
+                                <a href='/#ask'>Zapytaj</a>
                             </button>
                             <button>Pobierz plan</button>
                         </div>
